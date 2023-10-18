@@ -26,11 +26,7 @@ struct EditItemView: View {
             }
             .listRowBackground(Color("AppItemColor"))
             Section("Item Price") {
-                let formattedPrice = String(format: "%.2f", item.price)
-                Stepper("Price: \(formattedPrice)",
-                        value: $item.price,
-                        in: 0...100,
-                        step: 1)
+                TextField("Price", value: $item.price, format: .number)
             }
             .listRowBackground(Color("AppItemColor"))
         }
