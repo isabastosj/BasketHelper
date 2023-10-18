@@ -144,12 +144,12 @@ struct OnboardingView4: View {
                     
                 } label: {
                     RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .fill(.white)
+                        .fill(Color("AppItemColor"))
                         .frame(height: 64)
                         .padding(.horizontal, 16)
                         .overlay {
                             Text("Continue")
-                                .foregroundColor(.black)
+                                .foregroundColor(Color("TextColor"))
                                 .bold()
                         }
                 }
