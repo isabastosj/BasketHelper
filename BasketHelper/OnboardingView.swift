@@ -24,7 +24,7 @@ struct OnboardingView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding(.bottom, 24)
-        .background(Color("AppColor"))
+        .background(Color("AppBackgroundColor"))
     }
 }
 
@@ -34,7 +34,7 @@ struct OnboardingView1: View {
             
             Image(systemName: "plus")
                 .font(.system(size: 160))
-                .foregroundColor(.white)
+                .foregroundColor(Color("AppColor"))
                 .frame(height: 140)
             
             Spacer()
@@ -63,7 +63,7 @@ struct OnboardingView2: View {
             
             Image(systemName: "chevron.right")
                 .font(.system(size: 160))
-                .foregroundColor(.white)
+                .foregroundColor(Color("AppColor"))
                 .frame(height: 140)
             
             Spacer()
@@ -91,7 +91,7 @@ struct OnboardingView3: View {
             
             Image(systemName: "trash.fill")
                 .font(.system(size: 160))
-                .foregroundColor(.white)
+                .foregroundColor(Color("AppColor"))
                 .frame(height: 140)
             
             Spacer()
@@ -119,7 +119,7 @@ struct OnboardingView4: View {
                 
                 Image(systemName: "checkmark.square.fill")
                     .font(.system(size: 160))
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("AppColor"))
                     .frame(height: 140)
                 
                 Spacer()

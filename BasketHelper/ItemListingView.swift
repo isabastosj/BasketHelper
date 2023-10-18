@@ -17,7 +17,7 @@ struct ItemListingView: View {
         VStack {
             Rectangle()
                 .fill(Color(uiColor: .clear))
-                .frame(height: 200)
+                .frame(height: 188)
             
             List {
                 ForEach(items) { item in
