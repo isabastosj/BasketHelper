@@ -51,7 +51,7 @@ struct ContentView: View {
                                 .padding(.horizontal)
                                 .offset(y: -14)
                             }
-                        TextField("List name", text: $userListName)
+                        TextField("Your list name", text: $userListName)
                             .padding(.horizontal)
                         
                             .background {

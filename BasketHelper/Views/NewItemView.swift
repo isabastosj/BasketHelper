@@ -61,7 +61,7 @@ struct NewItemView: View {
                 }
             })
             .navigationBarTitleDisplayMode(.inline)
-            .navigationTitle(newName.isEmpty ? "New Item" : "Editing \(newName)")
+            .navigationTitle(newName.isEmpty ? "New Item" : "Creating \(newName)")
             
         }
         .navigationViewStyle(.stack)

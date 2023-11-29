@@ -34,16 +34,9 @@ struct EditItemView: View {
             .navigationTitle(item.name.isEmpty ? "New Item" : "Editing \(item.name)")
             .navigationBarTitleDisplayMode(.automatic)
         }
-        }
-        
-    
-    private func saveItem() {
-        withAnimation {
-//            let newItem = Item()
-//            modelContext.insert(newItem)
-//            path = [newItem]
-        }
     }
+    
+    
 }
 
 #Preview {
