@@ -22,7 +22,13 @@ struct ItemListingView: View {
             List {
                 ForEach(items) { item in
                     ItemCardView(item: item)
-                        .listRowBackground(Color("AppItemColor"))
+                        .listRowBackground(
+                                    RoundedRectangle(cornerRadius: 8)
+                                        .fill(item.isDone ? Color("AppItemColor").opacity(0.5) : Color("AppItemColor"))
+                                        .frame(height: 40)
+                                        .padding(2)
+                                )
+                        .listRowSeparator(.hidden)
                 }
                 .onDelete(perform: deleteItems)
                 .listStyle(.automatic)

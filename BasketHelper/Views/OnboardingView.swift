@@ -24,7 +24,12 @@ struct OnboardingView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding(.bottom, 24)
-        .background(Color("AppBackgroundColor"))
+        .background(
+            Image("OnboardingBg")
+                .resizable()
+                .ignoresSafeArea()
+                .aspectRatio(contentMode: .fill)
+        )
     }
 }
 
@@ -34,7 +39,6 @@ struct OnboardingView1: View {
             
             Image(systemName: "plus")
                 .font(.system(size: 160))
-                .foregroundColor(Color("AppColor"))
                 .frame(height: 140)
             
             Spacer()
@@ -49,6 +53,7 @@ struct OnboardingView1: View {
             }
             
         }
+        .foregroundStyle(.white)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding(.horizontal, 36)
         .padding(.bottom, 156)
@@ -63,7 +68,6 @@ struct OnboardingView2: View {
             
             Image(systemName: "chevron.right")
                 .font(.system(size: 160))
-                .foregroundColor(Color("AppColor"))
                 .frame(height: 140)
             
             Spacer()
@@ -79,6 +83,7 @@ struct OnboardingView2: View {
             
             
         }
+        .foregroundStyle(.white)
         .padding(.horizontal, 36)
         .padding(.bottom, 156)
         .padding(.top, 184)
@@ -91,7 +96,6 @@ struct OnboardingView3: View {
             
             Image(systemName: "trash.fill")
                 .font(.system(size: 160))
-                .foregroundColor(Color("AppColor"))
                 .frame(height: 140)
             
             Spacer()
@@ -105,6 +109,7 @@ struct OnboardingView3: View {
                     .multilineTextAlignment(.center)
             }
         }
+        .foregroundStyle(.white)
         .padding(.horizontal, 36)
         .padding(.bottom, 156)
         .padding(.top, 184)
@@ -119,7 +124,6 @@ struct OnboardingView4: View {
                 
                 Image(systemName: "checkmark.square.fill")
                     .font(.system(size: 160))
-                    .foregroundColor(Color("AppColor"))
                     .frame(height: 140)
                 
                 Spacer()
@@ -133,6 +137,7 @@ struct OnboardingView4: View {
                         .multilineTextAlignment(.center)
                 }
             }
+            .foregroundStyle(.white)
             .padding(.horizontal, 36)
             .padding(.bottom, 156)
             .padding(.top, 184)
@@ -144,12 +149,12 @@ struct OnboardingView4: View {
                     
                 } label: {
                     RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .fill(Color("AppItemColor"))
+                        .fill(.white)
                         .frame(height: 64)
                         .padding(.horizontal, 16)
                         .overlay {
                             Text("Continue")
-                                .foregroundColor(Color("TextColor"))
+                                .foregroundColor(Color("AppColor"))
                                 .bold()
                         }
                 }

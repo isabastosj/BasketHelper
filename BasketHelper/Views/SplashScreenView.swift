@@ -18,25 +18,24 @@ struct SplashScreenView: View {
                 HStack {
                     Spacer()
                     VStack(spacing: 8) {
-                        Image(systemName: "basket.fill")
-                            .font(.system(size: 140))
-                            .foregroundColor(Color("AppColor"))
-                        HStack(spacing: 0) {
-                            Text("Basket ")
-                                .foregroundColor(Color("TextColor"))
-                                .font(.system(size: 42))
-                                .fontWeight(.heavy)
-                            Text("Helper")
-                                .foregroundColor(Color("AppColor"))
-                                .font(.system(size: 42))
-                                .fontWeight(.heavy)
-                        }
+                        Image("Logo")
+                            .resizable()
+                            .frame(width: 207,height: 200)
+                            .padding()
+                        Text("Basket**Helper**")
+                            .foregroundColor(.white)
+                            .font(.system(size: 42))
                     }
                     Spacer()
                 }
                 Spacer()
             }
-            .background(Color("AppBackgroundColor"))
+            .background(
+                Image("OnboardingBg")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .aspectRatio(contentMode: .fill)
+            )
             .onAppear {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                     self.isActive = true

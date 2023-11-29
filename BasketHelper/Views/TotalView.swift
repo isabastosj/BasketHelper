@@ -21,6 +21,7 @@ struct TotalView: View {
                 .fill(Color("AppColor"))
                 .frame(height: 64)
                 .padding(.horizontal, 16)
+                .shadow(radius: 10, y: 10)
                 .overlay {
                     HStack {
                         Text("Total:")

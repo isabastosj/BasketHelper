@@ -15,9 +15,10 @@
 		5A03E3F32ADF3C7900133036 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A03E3F22ADF3C7900133036 /* SplashScreenView.swift */; };
 		5A03E3F52ADF3C9A00133036 /* ItemListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A03E3F42ADF3C9A00133036 /* ItemListingView.swift */; };
 		5A03E3F72ADF3CB500133036 /* ItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A03E3F62ADF3CB500133036 /* ItemCardView.swift */; };
-		5A03E3F92ADF3CFD00133036 /* EditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A03E3F82ADF3CFD00133036 /* EditCardView.swift */; };
+		5A03E3F92ADF3CFD00133036 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A03E3F82ADF3CFD00133036 /* EditItemView.swift */; };
 		5A03E3FB2ADF3D1900133036 /* TotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A03E3FA2ADF3D1900133036 /* TotalView.swift */; };
 		5A03E3FD2ADF3D3600133036 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A03E3FC2ADF3D3600133036 /* OnboardingView.swift */; };
+		5A902D192B17624B002B0EBE /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A902D182B17624B002B0EBE /* NewItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,9 +31,10 @@
 		5A03E3F22ADF3C7900133036 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		5A03E3F42ADF3C9A00133036 /* ItemListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListingView.swift; sourceTree = "<group>"; };
 		5A03E3F62ADF3CB500133036 /* ItemCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCardView.swift; sourceTree = "<group>"; };
-		5A03E3F82ADF3CFD00133036 /* EditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCardView.swift; sourceTree = "<group>"; };
+		5A03E3F82ADF3CFD00133036 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		5A03E3FA2ADF3D1900133036 /* TotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalView.swift; sourceTree = "<group>"; };
 		5A03E3FC2ADF3D3600133036 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		5A902D182B17624B002B0EBE /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				5A03E3E22ADF3C3800133036 /* BasketHelperApp.swift */,
-				5A03E3F22ADF3C7900133036 /* SplashScreenView.swift */,
-				5A03E3F42ADF3C9A00133036 /* ItemListingView.swift */,
-				5A03E3F62ADF3CB500133036 /* ItemCardView.swift */,
-				5A03E3F82ADF3CFD00133036 /* EditCardView.swift */,
-				5A03E3FA2ADF3D1900133036 /* TotalView.swift */,
-				5A03E3FC2ADF3D3600133036 /* OnboardingView.swift */,
-				5A03E3E42ADF3C3800133036 /* ContentView.swift */,
+				5A902D172B1761BD002B0EBE /* Views */,
 				5A03E3E62ADF3C3800133036 /* Item.swift */,
 				5A03E3E82ADF3C3900133036 /* Assets.xcassets */,
 				5A03E3EA2ADF3C3900133036 /* Preview Content */,
@@ -86,6 +82,21 @@
 				5A03E3EB2ADF3C3900133036 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5A902D172B1761BD002B0EBE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A03E3F22ADF3C7900133036 /* SplashScreenView.swift */,
+				5A03E3E42ADF3C3800133036 /* ContentView.swift */,
+				5A03E3F82ADF3CFD00133036 /* EditItemView.swift */,
+				5A902D182B17624B002B0EBE /* NewItemView.swift */,
+				5A03E3F42ADF3C9A00133036 /* ItemListingView.swift */,
+				5A03E3F62ADF3CB500133036 /* ItemCardView.swift */,
+				5A03E3FA2ADF3D1900133036 /* TotalView.swift */,
+				5A03E3FC2ADF3D3600133036 /* OnboardingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +173,8 @@
 				5A03E3FB2ADF3D1900133036 /* TotalView.swift in Sources */,
 				5A03E3E72ADF3C3800133036 /* Item.swift in Sources */,
 				5A03E3FD2ADF3D3600133036 /* OnboardingView.swift in Sources */,
-				5A03E3F92ADF3CFD00133036 /* EditCardView.swift in Sources */,
+				5A902D192B17624B002B0EBE /* NewItemView.swift in Sources */,
+				5A03E3F92ADF3CFD00133036 /* EditItemView.swift in Sources */,
 				5A03E3E32ADF3C3800133036 /* BasketHelperApp.swift in Sources */,
 				5A03E3F72ADF3CB500133036 /* ItemCardView.swift in Sources */,
 				5A03E3F32ADF3C7900133036 /* SplashScreenView.swift in Sources */,
@@ -303,18 +315,23 @@
 				DEVELOPMENT_TEAM = 7U9T24457T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BasketHelper;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = IsabelaBJ.BasketHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -332,18 +349,23 @@
 				DEVELOPMENT_TEAM = 7U9T24457T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BasketHelper;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = IsabelaBJ.BasketHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
