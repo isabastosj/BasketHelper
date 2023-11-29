@@ -20,7 +20,7 @@ struct SplashScreenView: View {
                     VStack(spacing: 8) {
                         Image("Logo")
                             .resizable()
-                            .frame(width: 207,height: 200)
+                            .frame(width: 105,height: 100)
                             .padding()
                         Text("Basket**Helper**")
                             .foregroundColor(.white)
